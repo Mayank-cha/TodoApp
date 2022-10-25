@@ -1,0 +1,18 @@
+<mat-form-field appearance="fill">
+  <mat-label>search</mat-label>
+  <input
+    matInput
+    [(ngModel)]="search"
+    placeholder="Search"
+  />
+  <mat-icon class='search-icon' color="primary" matPrefix (click)="filter(search)"
+    >search</mat-icon
+  >
+</mat-form-field>
+<mat-icon color="primary">Add New</mat-icon>
+<mat-tab-group>
+  <mat-tab label="All"> Content 1 </mat-tab>
+  <mat-tab label="Remaining"> Content 2 </mat-tab>
+  <mat-tab label="Complete"> Content 3 </mat-tab>
+</mat-tab-group>
+

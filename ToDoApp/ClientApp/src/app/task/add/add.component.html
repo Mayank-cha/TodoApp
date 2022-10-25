@@ -1,0 +1,17 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Task Name</mat-label>
+    <input matInput [(ngModel)]="task.Name" name="name"/>
+  </mat-form-field>
+
+  <p>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Ex. 100 Main St" [(ngModel)]="task.Description" name="description"></textarea>
+    </mat-form-field>
+  </p>
+  <button mat-raised-button color="primary" style="margin: 10px" (click)="performAdd()">
+    Add Task
+  </button>
+  <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+</form>
